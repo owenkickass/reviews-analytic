@@ -18,8 +18,13 @@ new_1 = []
 for d in data:
 	if len(d) < 100:   
 		new.append(d)   #把長度<100的留言裝進清單"new = [ ]"裡面
-	
 
 print(len(new))
 print('共有',len(new),'筆資料長度小於100')
 
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('共有',len(good),'提到good')
+print(good[2])
